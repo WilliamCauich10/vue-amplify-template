@@ -1,0 +1,38 @@
+.categories {
+    .in-house-header-tabs {
+        border-radius: 8px 8px 0 0;
+        background-color: #274C69;
+      }
+    
+      .in-house-body-tabs {
+        background-color: rgba(204, 204, 204, 0.15);
+        margin: 11px 0px 11px 0px !important;
+      }
+    
+      .info-chip-container {
+        min-width: 100px;
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        padding: 4px 8px;
+        border-radius: 8px;
+      }
+    
+      .info-chip-container > p {
+        font-size: 12px;
+      }
+    
+      .chips-gap {
+        gap: 16px;
+      }
+    
+      .custom-app-tabs {
+        padding: 4px;
+        background: #274c69;
+        border-radius: 4px;
+      }
+    
+      .lh-normal {
+        font-size: 16px;
+        line-height: normal !important;
+      }
+}

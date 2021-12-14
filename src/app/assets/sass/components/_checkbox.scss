@@ -1,0 +1,7 @@
+.v-input--checkbox{
+    margin-top: 0px !important;
+    margin-bottom: 12px !important;
+    .v-label:not(.v-label--is-disabled){
+        color: $black !important;
+    }
+}

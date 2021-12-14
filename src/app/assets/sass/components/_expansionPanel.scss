@@ -1,0 +1,34 @@
+.expansion{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: $blue_primary;
+    font-family: $OpenSans-Regular;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: $font-xsmall;
+    width: 40px;
+    zoom: 1.005;
+    // margin-top: 25em;
+    -webkit-font-smoothing: subpixel-antialiased;
+    position: fixed;//Localizar
+	left: 0px;// Posición inicial del eje x
+	top: 40%;
+    &:hover{
+        border-radius: 10px 0px 0px 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
+ }
+
+.flecha{
+    margin-right: -7px;
+    margin-left: -5px;
+    // padding: 10px 0px 10px 0px;
+}
+
+.titulo_blue {
+    font-size: $Gotham-Regular !important;
+    color: $blue_primary;
+    font-size: $font-title;
+}

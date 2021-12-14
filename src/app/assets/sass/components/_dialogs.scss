@@ -1,0 +1,64 @@
+.v-dialog {
+    // width: 955px !important;
+    .v-card {
+        color: $dialogs-full-body-color;
+        font-size: $font-small;
+        padding-left: 46px !important;
+        padding-right: 46px !important;
+
+        .v-card__title {
+            font-family: $Gotham-Regular !important;
+            font-size: $font-title !important;
+            margin-top: 24px;
+            font-weight: 500 !important;
+            &.text-blue {
+              color: $blue_primary;
+              justify-content: center;
+              border-bottom: 1px solid $blue_primary;
+              margin-bottom: 32px;
+            }
+        }
+
+        .v-card__subtitle {
+            font-family: $OpenSans-Regular !important;
+            font-size: $font-regular !important;
+            color: $black !important;
+            margin-top: 1px;
+        }
+        .v-card__actions{
+            margin-bottom: 24px;
+            .v-btn {
+              height: 40px !important;
+              margin-left: 8px !important;
+              margin-right: 8px !important;
+              &.default {
+                width: 147px !important;
+              }
+            }
+        }
+    }
+    /* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+    border-radius: 4px !important;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #757373;
+    border-radius: 18px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $blue_primary;
+    border-radius: 18px;
+  }
+
+  /*!* Handle on hover *!
+  ::-webkit-scrollbar-thumb:hover {
+    background: $white;
+  }*/
+}
+

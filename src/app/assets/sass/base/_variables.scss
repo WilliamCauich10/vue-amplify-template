@@ -1,0 +1,72 @@
+$fontDir: "/fonts/";
+$Gotham-Black: "Gotham Black";
+$Gotham-Bold: "Gotham Bold";
+$Gotham-Regular: "gotham";
+$OpenSans-Regular: "OpenSans-Regular";
+$OpenSans-Medium: "OpenSans-Medium";
+$OpenSans-SemiBold: "OpenSans-SemiBold";
+$WorkSans-Regular: "WorkSans-Regular";
+$WorkSans-Light: "WorkSans-Light";
+
+$font-xsmall: 12px;
+$font-small: 14px;
+$font-regular: 16px;
+$font-large: 20px;
+$font-subtitle: 24px;
+$font-title: 32px;
+$font-button: 48px;
+$font-18: 18px;
+//breakpoint
+$xs: 0;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px - 16px;
+$xl: 1920px - 16px;
+
+$border-radius: 5px;
+
+$none-rounded: 0;
+$rounded: $border-radius;
+$sm-rounded: $border-radius / 2;
+$lg-rounded: $border-radius * 2;
+$xl-rounded: $border-radius * 5;
+$clicle-rounded: 50%;
+
+$body-color: $background;
+$body-font-family: $OpenSans-Regular;
+$scrollbar-background: $gray_border;
+
+//buttons
+$button-font-family: $OpenSans-Regular;
+$button-height: 34;
+$button-font-size: 14px;
+
+//navbar
+$navbar-background: $blue_primary;
+$navbar-background-hover: $black;
+$navbar-color: $white;
+$navbar-hover-opacity: 0.2;
+
+$navbar-submenu-color: $black;
+$navbar-submenu-active-background: $blue_primary !important;
+$navbar-submenu-hover-background: $blue_primary !important;
+
+$navbar-submenu-hover-opacity: 1 !important;
+
+$navbar-fontsize-menu-icon: $font-large !important;
+$navbar-fontsize-menu-title: $font-xsmall !important;
+$navbar-fontsize-submenu-title: $font-small default;
+$navbar-fontsize-menu-icon-left: $font-regular !important;
+
+//toolbar
+$toolbar-background: $blue_primary;
+$toolbar-color: $black !important;
+
+//buttons
+$button-font-familly: $OpenSans-Regular;
+$button-primary: $blue_primary;
+$button-secondary: $white;
+$button-font-size: 14px;
+
+//cards
+$dialogs-full-body-color: $background;

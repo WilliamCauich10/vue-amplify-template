@@ -1,0 +1,32 @@
+.border-none {
+  border: none !important;
+}
+
+.table-not-pointer-events {
+  pointer-events: none !important;
+}
+
+.table__grid {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.icon__header {
+  margin-right: 5px;
+  font-size: $font-18;
+}
+
+.table__grid tr {
+  text-align: center;
+  font-family: $OpenSans-Regular;
+}
+
+.table__grid th {
+  border: solid $blue_primary 1px;
+  font-family: $Gotham-Regular;
+  font-weight: 500;
+}
+
+.table__grid tbody tr:nth-of-type(even) {
+  background-color: $white_table;
+}

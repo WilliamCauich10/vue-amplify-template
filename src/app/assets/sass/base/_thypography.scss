@@ -1,0 +1,127 @@
+@mixin setFontByType($FontType, $format) {
+  font-display: swap;
+  font-family: $FontType;
+  src: url($fontDir + $FontType + $format) format("truetype");
+}
+
+/// fonts
+/*@font-face {
+    font-family: $Gotham-Black;
+    font-display: swap;
+    src: url($fontDir + $Gotham-Black + ".ttf");
+    src: url($fontDir + $Gotham-Black + ".ttf") format("truetype");
+}*/
+
+/*@font-face {
+    font-family: $Gotham-Bold;
+    font-display: swap;
+    src: url($fontDir + $Gotham-Bold + ".ttf");
+    src: url($fontDir + $Gotham-Bold + ".ttf") format("truetype");
+}*/
+
+/*@font-face {
+  font-family: $Gotham-Regular;
+  font-display: swap;
+  src: url($fontDir + $Gotham-Regular + ".otf");
+  src: url($fontDir + $Gotham-Regular + ".otf") format("opentype");
+}*/
+
+/*@font-face {
+  font-family: $OpenSans-Regular;
+  font-display: swap;
+  src: url($fontDir + $OpenSans-Regular + ".ttf");
+  src: url($fontDir + $OpenSans-Regular + ".ttf") format("truetype");
+}*/
+
+/*@font-face {
+  font-family: $OpenSans-Medium;
+  font-display: swap;
+  src: url($fontDir + $OpenSans-Medium + ".ttf");
+  src: url($fontDir + $OpenSans-Medium + ".ttf") format("truetype");
+}*/
+
+/*@font-face {
+  font-family: $OpenSans-SemiBold;
+  font-display: swap;
+  src: url($fontDir + $OpenSans-SemiBold + ".ttf");
+  src: url($fontDir + $OpenSans-SemiBold + ".ttf") format("truetype");
+}*/
+
+/*
+@font-face {
+  @include setFontByType($Gotham-Black, ".ttf");
+}
+
+@font-face {
+  @include setFontByType($Gotham-Bold, ".ttf");
+}
+
+@font-face {
+  @include setFontByType($Gotham-Regular, ".otf");
+}
+
+@font-face {
+  @include setFontByType($OpenSans-Regular, ".ttf");
+}
+
+@font-face {
+  @include setFontByType($OpenSans-Medium, ".ttf");
+}
+
+@font-face {
+  @include setFontByType($OpenSans-SemiBold, ".ttf");
+}
+*/
+
+$gotham-bold: ("name": $Gotham-Bold, "format": ".ttf");
+$gotham-black: ("name": $Gotham-Black, "format": ".ttf");
+$gotham-regular: ("name": $Gotham-Regular, "format": ".otf");
+
+$open-sans-regular: ("name": $OpenSans-Regular, "format": ".ttf");
+$open-sans-medium: ("name": $OpenSans-Medium, "format": ".ttf");
+$open-sans-semi-bold: ("name": $OpenSans-SemiBold, "format": ".ttf");
+
+$fonts: $gotham-regular,
+$gotham-bold,
+$gotham-black,
+$open-sans-regular,
+$open-sans-medium,
+$open-sans-semi-bold;
+
+@for $i from 1 through length($fonts) {
+  $fontType: map-get(nth($fonts, $i), "name");
+  $fontFormat: map-get(nth($fonts, $i), "format");
+
+  @font-face {
+    @include setFontByType($fontType, $fontFormat);
+  }
+}
+
+@mixin createFontVariantsByType($family, $serif, $size, $variant) {
+  font-family: $family !important;
+  color: $blue_primary !important;
+  font-size: $size !important;
+  font-weight: $variant !important;
+}
+
+.gotham-bold {
+  @include createFontVariantsByType("Gotham", serif, 32px, bold);
+}
+
+.gotham-medium {
+  @include createFontVariantsByType("Gotham", serif, 24px, bold);
+}
+
+.gotham-book {
+  @include createFontVariantsByType("Gotham", serif, 24px, normal);
+}
+
+.open-sans-light {
+  @include createFontVariantsByType("Open Sans", sans-serif, 16px, "light");
+}
+
+.open-sans-regular {
+  @include createFontVariantsByType("Open Sans", sans-serif, 16px, normal);
+}
+
+

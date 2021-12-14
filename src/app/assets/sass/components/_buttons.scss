@@ -1,0 +1,65 @@
+.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--round):not(.v-btn__content):not(.v-date-picker-table__current):not(.v-btn--rounded) {
+    font-size: $font-small !important;
+    color: $button-secondary !important;
+    border: none !important;
+    padding: 14px 28px !important;
+    border-radius: 4px !important;
+    height: $font-button;
+&.btn-primary {
+    background-color: $button-primary !important;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+&.btn-secondary {
+    background-color: $button-secondary !important;
+    color: $blue_secondary !important;
+    border: 1.5px solid $blue_secondary !important;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+}
+
+&.btn-add {
+    background-color: $button-secondary !important;
+    color: $button-primary !important;
+    border-style: dashed !important;
+    border-width: 1.5px !important;
+}
+
+&.btn-clear {
+    background-color: $red_clear !important;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+&.btn-mini {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    height: 24px !important;
+    width: 100px !important;
+    text-transform: capitalize;
+    .v-btn__content {
+        font-size: $font-xsmall !important;
+        padding: 0px !important;
+    }
+}
+}
+
+.theme--light.v-btn.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn-outlined) {
+opacity: 0.5;
+
+&.btn-primary {
+    background-color: $button-primary !important;
+    color: $button-secondary !important;
+}
+
+&.btn-secondary {
+    background-color: $button-secondary !important;
+    color: $button-primary !important;
+}
+
+&.btn-mini {
+    .v-icon {
+        color: $blue_primary !important;
+    }
+    .v-btn__content {
+        color: $blue_primary !important;
+    }
+}
+}

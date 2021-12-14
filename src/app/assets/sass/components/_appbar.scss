@@ -1,0 +1,35 @@
+.v-app-bar{
+    background-color: $blue_primary !important;
+    padding-left: 8%;
+    padding-right: 8%;
+    // min-width: 1366px;
+}
+// .nav__divider {
+//     margin: 0 auto;
+//     width: 100%;
+// }
+// /* Estilos para el v-list-header-title personalizado. */
+// .custom-list-item-title {
+//     background-color: white;
+//     padding: 5px 16px 5px 16px;
+//     border-radius: 0 25px 25px 0;
+//     width: auto;
+// }
+// /* Eliminamos el padding izquierdo al header del componente v-list-group para tener el efecto del encabezo blanco */
+// .v-list-group__header {
+//     padding-left: 0;
+// }
+// .theme--dark.v-text-field > .v-input__control > .v-input__slot:before,
+// .theme--dark.v-text-field:not(.v-input--has-state):hover
+//     > .v-input__control
+//     > .v-input__slot:before {
+//     border-color: transparent !important;
+// }
+// /*.sidebar__logo solo se aplica si isMobile es false*/
+// .sidebar__logo {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+//     width: 300px;
+// }

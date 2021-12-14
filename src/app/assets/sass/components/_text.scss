@@ -1,0 +1,68 @@
+.mainTitle {
+    font-family: $Gotham-Regular !important;
+    color: $black;
+    font-weight: bold !important;
+    font-size: $font-title !important;
+    margin: 0px 0px 30px 0px !important;
+    padding: 0px !important;
+}
+
+.mainSubtitulo {
+    font-family: $OpenSans-Regular !important;
+    color: $black;
+    font-size: $font-regular !important;
+    padding: 0px !important;
+}
+
+.subtitulo {
+    font-family: $Gotham-Regular !important;
+    color: $black;
+    font-size: $font-subtitle;
+}
+
+.information {
+    font-family: $OpenSans-Regular;
+    font-size: $font-regular;
+    font-weight: bold;
+    color: $black;
+}
+
+.mini-information {
+    font-family: $OpenSans-Regular;
+    font-size: $font-xsmall;
+    color: $black;
+    margin-top: -20px;
+}
+
+// Invitation Section
+
+.invitacion_placeholder_container_left {
+    text-align: left;
+}
+
+.invitacion_placeholder_container {
+    text-align: center;
+}
+
+.invitacion_placeholder_title {
+    font-weight: 400;
+    color: "#757575";
+    font-size: 12px;
+}
+
+.invitacion_placeholder_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.line_section_title {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+}
+
+.title_section_line_height {
+    line-height: normal !important;
+    white-space: nowrap;
+}

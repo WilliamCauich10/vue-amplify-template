@@ -1,0 +1,30 @@
+.gridbar {
+    span.icons__panels {
+        padding: 4px;
+        width: 100px;
+        height: 20px;
+        background: rgba(204, 204, 204, 0.15);
+        border-radius: 4px;
+    }
+
+    .btn__icons__adjustments {
+        margin-top: 19px;
+        color: #274C69;
+        font-size: 13px;
+        font-family: "Gotham";
+        font-weight: 500;
+        opacity: 50%;
+    }
+
+    .select__layout {
+        margin-left: "20px";
+    }
+
+    #icon__layouts {
+        margin-left: 20px;
+    }
+
+    .icon {
+        margin-left: 10px;
+    }
+}
